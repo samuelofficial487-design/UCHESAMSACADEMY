@@ -1,59 +1,77 @@
-
-<!DOCTYPE html>
-<html lang="utf-8">
+<!doctype html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>UCHE SAM'S ACADEMY WEBSITE</title>
-	<link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>UCHE SAM'S ACADEMY</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-	<body>
-		<header>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="brand">UCHE SAM'S ACADEMY</h1>
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#events">Events</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
+  <main>
+    <section id="home" class="hero">
+      <div class="container">
+        <h2>Welcome to UCHE SAM'S ACADEMY — Learning Together • Personal Growth • Engaging Lessons</h2>
+        <p class="lead">We are community-driven movement passionate about education,leadership,growth, and positive impact. <br>Whether You're Visiting for the first time or returning, We want your experience to be meanigful and refreshing.</p>
+        <a class="btn" href="#events">See Events</a>
+      </div>
+    </section>
 
-		
-	<h1>UCHE SAM'S Academy</h1>
-	<p class="motto">motto: Education Is The Key</p>
+    <section id="events" class="section">
+      <div class="container">
+        <h2>Upcoming Events</h2>
+        <div id="eventsList" class="events-grid" aria-live="polite"></div>
+      </div>
+    </section>
 
-	<nav>
-		<ul>
+    <section id="about" class="section alt">
+      <div class="container">
+        <h2>About UCHE SAM'S ACADEMY</h2>
+        <p>Uche Sam's Academy is a community-focused movement for passionate education, training, and community outreach. We want your experience to be meanigful and refreshing, and we believe learnig together.</p>
+      </div>
+    </section>
 
-			<li><a href="menu.html"> Menu </a></li>
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact & Sign Up</h2>
+        <form id="contactForm" class="form">
+          <label>
+            Full name
+            <input id="name" name="name" type="text" required />
+          </label>
+          <label>
+            Email
+            <input id="email" name="email" type="email" required />
+          </label>
+          <label>
+            Message
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </label>
+          <button type="submit" class="btn">Send Message</button>
+          <p id="formStatus" role="status" aria-live="polite" class="muted"></p>
+        </form>
+      </div>
+    </section>
+  </main>
 
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 UCHE SAM'S ACADEMY • All rights reserved</p>
+      <p class="muted">Built for live events: Morning Assembly (January), Mid-term-test (March),Cultural-day(July) Inter-house-sports (June), Graduation (October).</p>
+    </div>
+  </footer>
 
-	<li><a href="About.html">     About </a></li>
-	<li><a href="Gallaries.html"> Gallaries</a></li>
-	<li><a href="Visitor View.html">visitor View </a></li></ul>
-</nav>
-</header>
-<section class="hero">
-	<h2>Welcome To Our Academy</h2>
-	<p>Building bright mind for brighter furture.
-	<a href="About.html" class="btn">Learn more</a></p>
-</section>
-<section class="animated-image">
-	<img src="photo/school building.jfif">    <img src="photo/class.jfif">     <img src="photo/school student.jfif">
-    <img src="photo/student practical.jfif">    <img src="photo/class.jfif">   <img src="photo/class.jfif">  
-   <img src="photo/student lab.jfif">    <img src="photo/school student.jfif">
-    <img src="photo/student lab.jfif">  <img src="photo/student playground.jfif">
-
-
-
-
-
-
-</section>
-<section class="contact"><h3>contact us</h3>
-
-	<p><strong>Address:</strong>Behind Aso Tasha Market Mararaba,Nasarawa State</p>
-	<p><strong>Contact:</strong> (+234) 80 664 607 39 </p>
-	<p><strong>Email:</strong>uches0806646@gamil.com</p>
-	<footer>
-		<p> &copy; 2025 UCHE SAM'S ACADEMY. ALL Right Reserved.</p>
-	</footer>
-
-
-	
-
+  <script src="script.js"></script>
 </body>
 </html>
